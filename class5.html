@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>class 5</title>
+    <link rel="stylesheet" href="class5.css"
+</head>
+<body>
+    
+</body>
+</html><header>
+    <h1>class 5</h1>
+    <a href="index.html" class="Home">HOME</a>
+    <input type="text" id="search" placeholder="Search subjects..." onkeyup="searchSubjects()">
+</header>
+<main>
+   
+    
+      <!-- Page Sections -->
+      
+    
+    <div class="grid" id="subject-list">
+        <div class="card" data-name="Mathematics">
+            <h2>Mathematics</h2>
+            <a href="class5maths.zip" download>Download PDF</a>
+        </div>
+        <div class="card" data-name="Science">
+            <h2>ENV</h2>
+            <a href="class 5env.zip" download>Download PDF</a>
+        </div>
+        <div class="card" data-name="English">
+            <h2>English</h2>
+            <a href="class5English.zip" download>Download PDF</a>
+        </div>
+        
+        <div class="card" data-name="Hindi">
+            <h2>HINDI</h2>
+            <a href="class5hindi.zip" download>Download PDF</a>
+        </div>
+        
+    </div>
+    
+</main>
+
+<script>
+    function searchSubjects() {
+        let input = document.getElementById('search').value.toLowerCase();
+        let cards = document.querySelectorAll('.card');
+        cards.forEach(card => {
+            let name = card.getAttribute('data-name').toLowerCase();
+            card.style.display = name.includes(input) ? 'block' : 'none';
+        });
+    }
+</script>
+<footer>
+    <div class="footer-container">
+        <div class="footer-section about">
+            <h2>About Us</h2>
+            <p>We provide high-quality electronic items and clothing at affordable prices. Shop with us for the best deals!</p>
+        </div>
+        <div class="footer-section links">
+            <h2>Quick Links</h2>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+            </ul>
+        </div>
+        <div class="footer-section contact">
+            <h2>Contact Us</h2>
+            <p>Email: support@example.com</p>
+            <p>Phone: +123 456 7890</p>
+            <p>Address: 123, Street Name, City, Country</p>
+        </div>
+        <div class="footer-section social">
+            <h2>Follow Us</h2>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2025 YourCompany. All Rights Reserved.</p>
+    </div>
+</footer>
+
+<style>
+    footer {
+        background: #222;
+        color: white;
+        padding: 20px 0;
+        text-align: center;
+    }
+    .footer-container {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        max-width: 1100px;
+        margin: auto;
+    }
+    .footer-section {
+        flex: 1;
+        padding: 10px;
+        min-width: 200px;
+    }
+    .footer-section h2 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    .footer-section ul {
+        list-style: none;
+        padding: 0;
+    }
+    .footer-section ul li a {
+        color: white;
+        text-decoration: none;
+    }
+    .footer-section .social a {
+        color: white;
+        margin: 0 10px;
+        font-size: 20px;
+    }
+    .footer-bottom {
+        margin-top: 20px;
+        font-size: 14px;
+    }
+</style>
+
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+<script>
+    function searchSubjects() {
+        let input = document.getElementById('search').value.toLowerCase();
+        let cards = document.querySelectorAll('.card');
+        cards.forEach(card => {
+            let name = card.getAttribute('data-name').toLowerCase();
+            card.style.display = name.includes(input) ? 'block' : 'none';
+        });
+    }
+</script>
+</body>
+</html>
+
+
